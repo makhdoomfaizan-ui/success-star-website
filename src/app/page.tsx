@@ -14,11 +14,11 @@ export default function HomePage() {
     <>
       <section className="relative min-h-[92vh] overflow-hidden text-[#f8f2e8]">
         <Image
-          src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&w=2400&q=80"
-          alt="Students learning at Success Star Training Center atmosphere"
+          src="/images/campus/exterior.jpg"
+          alt="Success Star Training Center building in Sharjah"
           fill
           priority
-          className="hero-ken object-cover"
+          className="hero-ken object-cover object-[center_35%]"
         />
         <div className="absolute inset-0 bg-[linear-gradient(120deg,rgba(10,22,36,0.88)_0%,rgba(10,22,36,0.55)_55%,rgba(10,22,36,0.35)_100%)]" />
         <div className="container-page relative flex min-h-[92vh] flex-col justify-end pb-16 pt-28">
@@ -29,7 +29,7 @@ export default function HomePage() {
             Sharjah learning that builds real confidence.
           </h1>
           <p className="fade-up-delay-2 mt-6 max-w-xl text-lg leading-8 text-[#e7dccb]">
-            Personalised tutoring, kids skills, and professional courses in Al Riqa — with clear next steps for every learner.
+            School tutoring, IELTS, KG support, and skills training in Al Riqa — with clear next steps for every learner.
           </p>
           <div className="fade-up-delay-2 mt-8 flex flex-wrap gap-3">
             <Link href="/admissions" className="btn-gold">
@@ -92,13 +92,13 @@ export default function HomePage() {
         <div className="container-page grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-end">
           <SectionHeading
             eyebrow="Campus life"
-            title="See the learning atmosphere"
-            description="Replace these starter images with your own classroom and centre photos — the site is already structured for a full media gallery."
+            title="See the real Success Star centre"
+            description="Your Sharjah classrooms, reception, KG room, and IELTS study spaces — real photos from your centre."
           />
           <div className="relative aspect-[16/10] overflow-hidden rounded-[1.75rem] shadow-[var(--shadow)]">
             <Image
-              src="https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=1600&q=80"
-              alt="Classroom learning at an education centre"
+              src="/images/campus/reception.jpg"
+              alt="Success Star Sharjah reception and logo wall"
               fill
               className="object-cover transition duration-700 hover:scale-105"
             />

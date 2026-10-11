@@ -17,8 +17,8 @@ export default function GalleryPage() {
       <div className="container-page">
         <SectionHeading
           eyebrow="Gallery"
-          title="Photos and videos that build trust"
-          description="Starter images are in place so the page looks complete. Swap them with your real centre photos and YouTube/short videos anytime."
+          title="Inside Success Star, Sharjah"
+          description="Real photos from our centre — classrooms, reception, KG room, and IELTS study spaces."
         />
 
         <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">

@@ -6,54 +6,61 @@ export type GalleryItem = {
   image: string;
 };
 
-/** Replace these Unsplash placeholders with your real Success Star photos anytime. */
 export const gallery: GalleryItem[] = [
   {
     id: "1",
-    title: "Focused classroom learning",
-    category: "Classroom",
-    alt: "Students learning in a bright classroom in Sharjah",
-    image:
-      "https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=1600&q=80",
+    title: "Success Star Training Center, Sharjah",
+    category: "Campus",
+    alt: "Exterior of Success Star Training Center building in Sharjah",
+    image: "/images/campus/exterior.jpg",
   },
   {
     id: "2",
-    title: "One-to-one tutoring support",
-    category: "Classroom",
-    alt: "Tutor helping a student during personalised tutoring",
-    image:
-      "https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?auto=format&fit=crop&w=1600&q=80",
+    title: "Reception & welcome area",
+    category: "Campus",
+    alt: "Success Star Sharjah reception desk and logo wall",
+    image: "/images/campus/reception.jpg",
   },
   {
     id: "3",
-    title: "Kids skills development",
-    category: "Kids",
-    alt: "Children developing learning skills with guidance",
-    image:
-      "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=1600&q=80",
+    title: "Classroom maths tutoring",
+    category: "Classroom",
+    alt: "Teacher explaining algebra on whiteboard to students",
+    image: "/images/campus/class-math-1.jpg",
   },
   {
     id: "4",
-    title: "Computer skills practice",
-    category: "Skills",
-    alt: "Learner practising computer skills on a laptop",
-    image:
-      "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1600&q=80",
+    title: "Guided board teaching",
+    category: "Classroom",
+    alt: "Female teacher solving maths equations with students",
+    image: "/images/campus/class-math-2.jpg",
   },
   {
     id: "5",
-    title: "Creative design session",
+    title: "IELTS preparation materials",
     category: "Skills",
-    alt: "Creative design training session with digital tools",
-    image:
-      "https://images.unsplash.com/photo-1626785774573-4b7993141ae2?auto=format&fit=crop&w=1600&q=80",
+    alt: "IELTS mock test papers and Cambridge IELTS books at Success Star",
+    image: "/images/campus/ielts-desk.jpg",
   },
   {
     id: "6",
-    title: "Parent-trusted learning space",
+    title: "English & IELTS study resources",
+    category: "Skills",
+    alt: "IELTS academic books, grammar binders and practice materials",
+    image: "/images/campus/ielts-materials.jpg",
+  },
+  {
+    id: "7",
+    title: "KG learning room",
+    category: "Kids",
+    alt: "Kindergarten learning room with Success Star branding",
+    image: "/images/campus/kg-room.jpg",
+  },
+  {
+    id: "8",
+    title: "Waiting area",
     category: "Campus",
-    alt: "Welcoming education centre environment",
-    image:
-      "https://images.unsplash.com/photo-1497633762265-9d179a990aa6?auto=format&fit=crop&w=1600&q=80",
+    alt: "Success Star waiting area with logo and seating",
+    image: "/images/campus/waiting.jpg",
   },
 ];

@@ -37,6 +37,27 @@ export const courses: Course[] = [
     featured: true,
   },
   {
+    slug: "ielts-preparation-sharjah",
+    title: "IELTS Preparation Course Sharjah",
+    shortTitle: "IELTS Preparation",
+    category: "Professional Skills",
+    audience: "Academic & General Training candidates",
+    duration: "Flexible batches + mock tests",
+    mode: "In-centre + online",
+    summary:
+      "IELTS coaching with Cambridge practice materials, mock tests, and guided support for Listening, Reading, Writing, and Speaking.",
+    outcomes: [
+      "Structured practice across all four IELTS skills",
+      "Mock tests with feedback",
+      "Clear score-improvement study plan",
+    ],
+    seoTitle: "IELTS Preparation Course Sharjah | Success Star",
+    seoDescription:
+      "IELTS preparation in Sharjah with mock tests and Cambridge practice materials at Success Star Training Center, Al Riqa.",
+    primaryKeyword: "IELTS course Sharjah",
+    featured: true,
+  },
+  {
     slug: "igcse-tuition-sharjah",
     title: "IGCSE & Exam Preparation Tuition Sharjah",
     shortTitle: "IGCSE Tuition",
@@ -55,6 +76,27 @@ export const courses: Course[] = [
     seoDescription:
       "IGCSE tuition in Sharjah with structured revision, past papers, and expert subject support near Al Riqa.",
     primaryKeyword: "IGCSE tuition Sharjah",
+    featured: true,
+  },
+  {
+    slug: "kg-foundation-sharjah",
+    title: "KG & Early Years Learning Support Sharjah",
+    shortTitle: "KG Foundation",
+    category: "Kids Skills",
+    audience: "Kindergarten / early years",
+    duration: "Age-based sessions",
+    mode: "In-centre",
+    summary:
+      "Warm early-years learning support in our KG room — building reading readiness, number confidence, and learning habits.",
+    outcomes: [
+      "Early literacy and number foundations",
+      "Confidence in a child-friendly classroom",
+      "Supportive start before school pressure grows",
+    ],
+    seoTitle: "KG Learning Support Sharjah | Success Star",
+    seoDescription:
+      "Kindergarten and early years learning support in Sharjah at Success Star Training Center — child-friendly KG classroom.",
+    primaryKeyword: "KG tuition Sharjah",
     featured: true,
   },
   {
