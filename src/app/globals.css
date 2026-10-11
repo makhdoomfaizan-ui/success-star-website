@@ -70,6 +70,10 @@ a {
   padding-block: clamp(3.5rem, 6vw, 6rem);
 }
 
+main > .section-space:first-child {
+  padding-top: clamp(5.5rem, 8vw, 7rem);
+}
+
 .btn-primary {
   display: inline-flex;
   align-items: center;
