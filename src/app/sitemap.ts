@@ -6,6 +6,7 @@ import { site } from "@/lib/site";
 export default function sitemap(): MetadataRoute.Sitemap {
   const staticPages = [
     "",
+    "/academics",
     "/courses",
     "/admissions",
     "/faculty",
@@ -15,9 +16,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/contact",
   ].map((path) => ({
     url: `${site.url}${path}`,
-    lastModified: "2026-10-11",
+    lastModified: "2026-10-13",
     changeFrequency: "weekly" as const,
-    priority: path === "" ? 1 : 0.8,
+    priority: path === "" || path === "/academics" ? 1 : 0.8,
   }));
 
   const coursePages = courses.map((course) => ({

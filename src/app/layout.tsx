@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Fraunces, Sora } from "next/font/google";
+import { Fraunces, Outfit } from "next/font/google";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
 import { OrganizationJsonLd } from "@/components/JsonLd";
@@ -7,8 +7,8 @@ import { WhatsAppFloat } from "@/components/WhatsAppFloat";
 import { site } from "@/lib/site";
 import "./globals.css";
 
-const sora = Sora({
-  variable: "--font-sora",
+const outfit = Outfit({
+  variable: "--font-outfit",
   subsets: ["latin"],
 });
 
@@ -20,21 +20,20 @@ const fraunces = Fraunces({
 export const metadata: Metadata = {
   metadataBase: new URL(site.url),
   title: {
-    default: `${site.name} | Tutoring & Training in Sharjah`,
+    default: `${site.name} | FS1 to Year 12 Academy Sharjah`,
     template: `%s | ${site.shortName}`,
   },
   description: site.description,
   keywords: [
+    "FS1 to Year 12 tuition Sharjah",
+    "academic support Sharjah",
     "tutoring centre Sharjah",
     "Success Star Training Center",
     "IGCSE tuition Sharjah",
-    "Excel course Sharjah",
-    "mental math Sharjah",
-    "computer training Sharjah",
-    "graphic design course Sharjah",
+    "IELTS course Sharjah",
   ],
   openGraph: {
-    title: `${site.name} | Sharjah`,
+    title: `${site.name} | FS1 to Year 12 Sharjah`,
     description: site.description,
     url: site.url,
     siteName: site.name,
@@ -48,8 +47,8 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
-    <html lang="en-AE" className={`${sora.variable} ${fraunces.variable} h-full`}>
-      <body className="min-h-full flex flex-col antialiased">
+    <html lang="en-AE" className={`${outfit.variable} ${fraunces.variable} h-full`}>
+      <body className="flex min-h-full flex-col antialiased">
         <OrganizationJsonLd />
         <Header />
         <main className="flex-1">{children}</main>

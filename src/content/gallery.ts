@@ -23,16 +23,16 @@ export const gallery: GalleryItem[] = [
   },
   {
     id: "3",
-    title: "Classroom maths tutoring",
+    title: "Kids in maths class",
     category: "Classroom",
-    alt: "Teacher explaining algebra on whiteboard to students",
+    alt: "Children learning maths with a Success Star teacher",
     image: "/images/campus/class-math-1.jpg",
   },
   {
     id: "4",
-    title: "Guided board teaching",
+    title: "Students learning together",
     category: "Classroom",
-    alt: "Female teacher solving maths equations with students",
+    alt: "Students in a vibrant Success Star classroom lesson",
     image: "/images/campus/class-math-2.jpg",
   },
   {

@@ -1,27 +1,28 @@
 import type { Metadata } from "next";
 import { EnquiryForm } from "@/components/EnquiryForm";
 import { SectionHeading } from "@/components/SectionHeading";
+import { SocialLinks } from "@/components/SocialLinks";
 import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Admissions & Assessment Sharjah",
   description:
-    "Book a free assessment at Success Star Training Center in Al Riqa, Sharjah. Simple admissions for tutoring and skills courses.",
+    "Book a free academic assessment at Success Star Training Center in Al Riqa, Sharjah for FS1 to Year 12 support.",
   alternates: { canonical: "/admissions" },
 };
 
 const steps = [
   {
-    title: "Tell us your goal",
-    body: "Share the learner’s age/level, subjects, or skills course interest on WhatsApp or the form.",
+    title: "Share your child’s year group",
+    body: "Tell us FS1–Year 12 stage, subjects and what they need help with.",
   },
   {
     title: "Book an assessment",
-    body: "We recommend a suitable plan — school tutoring, mental math, Excel, design, or pathway support.",
+    body: "We recommend a personalised academic plan with clear weekly goals.",
   },
   {
     title: "Start learning",
-    body: "Join in-centre sessions in Al Riqa or online classes with clear progress follow-up.",
+    body: "Join bright classroom sessions in Al Riqa with progress updates for parents.",
   },
 ];
 
@@ -32,46 +33,44 @@ export default function AdmissionsPage() {
         <div>
           <SectionHeading
             eyebrow="Admissions"
-            title="Enrol in three clear steps"
-            description="No confusing process. Message us, book an assessment, and start with a plan that fits your family or career goal."
+            title="Join Success Star in three clear steps"
+            description="Simple, parent-friendly admissions focused on academic placement from FS1 to Year 12."
           />
 
-          <ol className="mt-10 space-y-8">
+          <ol className="mt-10 space-y-5">
             {steps.map((step, index) => (
-              <li key={step.title} className="border-t border-[var(--line)] pt-6">
-                <p className="text-xs font-semibold uppercase tracking-[0.18em] text-gold">
+              <li key={step.title} className="rounded-[1.4rem] bg-white p-5 shadow-sm ring-1 ring-[var(--line)]">
+                <p className="text-xs font-bold uppercase tracking-[0.18em] text-coral">
                   Step {index + 1}
                 </p>
-                <h2 className="display mt-2 text-2xl font-semibold">{step.title}</h2>
+                <h2 className="display mt-2 text-2xl font-semibold text-navy">{step.title}</h2>
                 <p className="mt-3 text-sm leading-7 text-ink-soft">{step.body}</p>
               </li>
             ))}
           </ol>
 
-          <div className="mt-10 space-y-3 text-sm leading-7 text-ink-soft">
+          <div className="mt-8 space-y-3 text-sm leading-7 text-ink-soft">
             <p>
-              <strong className="text-ink">Centre:</strong> {site.address}
+              <strong className="text-navy">Centre:</strong> {site.address}
             </p>
             {site.hours.map((item) => (
               <p key={item.day}>
-                <strong className="text-ink">{item.day}:</strong> {item.time}
+                <strong className="text-navy">{item.day}:</strong> {item.time}
               </p>
             ))}
-            <p>
-              <strong className="text-ink">Call:</strong>{" "}
-              <a href={`tel:${site.phone}`}>{site.phoneDisplay}</a> · Landline{" "}
-              <a href={`tel:${site.landline}`}>{site.landlineDisplay}</a>
-            </p>
+            <div className="pt-2">
+              <SocialLinks tone="dark" />
+            </div>
           </div>
         </div>
 
         <div>
-          <h2 className="display text-2xl font-semibold">Book your assessment</h2>
+          <h2 className="display text-2xl font-semibold text-navy">Book your assessment</h2>
           <p className="mt-2 text-sm text-ink-soft">
             Submit and WhatsApp opens with your details ready to send.
           </p>
           <div className="mt-6">
-            <EnquiryForm />
+            <EnquiryForm courseName="FS1 to Year 12 academics" />
           </div>
         </div>
       </div>

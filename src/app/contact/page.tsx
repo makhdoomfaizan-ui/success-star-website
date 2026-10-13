@@ -1,12 +1,13 @@
 import type { Metadata } from "next";
 import { EnquiryForm } from "@/components/EnquiryForm";
 import { SectionHeading } from "@/components/SectionHeading";
+import { SocialLinks } from "@/components/SocialLinks";
 import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Contact Success Star Training Center Sharjah",
   description:
-    "Contact Success Star Training Center in Al Riqa, Sharjah by WhatsApp, phone, or enquiry form.",
+    "Contact Success Star Training Center in Al Riqa, Sharjah by WhatsApp, phone, social media or enquiry form.",
   alternates: { canonical: "/contact" },
 };
 
@@ -18,42 +19,45 @@ export default function ContactPage() {
           <SectionHeading
             eyebrow="Contact"
             title="Visit us in Al Riqa, Sharjah"
-            description="Call, WhatsApp, or send an enquiry. We respond with course guidance and assessment timing."
+            description="Call, WhatsApp, message us on social, or send an enquiry for FS1–Year 12 academic support."
           />
 
           <div className="mt-8 space-y-4 text-sm leading-7 text-ink-soft">
             <p>
-              <strong className="text-ink">Address</strong>
+              <strong className="text-navy">Address</strong>
               <br />
               {site.address}
             </p>
             <p>
-              <strong className="text-ink">Mobile</strong>
+              <strong className="text-navy">Mobile</strong>
               <br />
               <a href={`tel:${site.phone}`}>{site.phoneDisplay}</a>
             </p>
             <p>
-              <strong className="text-ink">Landline</strong>
+              <strong className="text-navy">Landline</strong>
               <br />
               <a href={`tel:${site.landline}`}>{site.landlineDisplay}</a>
             </p>
             <p>
-              <strong className="text-ink">Email</strong>
+              <strong className="text-navy">Email</strong>
               <br />
               <a href={`mailto:${site.email}`}>{site.email}</a>
             </p>
             {site.hours.map((item) => (
               <p key={item.day}>
-                <strong className="text-ink">{item.day}</strong>
+                <strong className="text-navy">{item.day}</strong>
                 <br />
                 {item.time}
               </p>
             ))}
           </div>
 
-          <a href={site.whatsapp} target="_blank" rel="noreferrer" className="btn-gold mt-8">
-            Chat on WhatsApp
-          </a>
+          <div className="mt-6 flex flex-wrap items-center gap-3">
+            <a href={site.whatsapp} target="_blank" rel="noreferrer" className="btn-gold">
+              Chat on WhatsApp
+            </a>
+            <SocialLinks tone="dark" />
+          </div>
 
           <div className="mt-8 overflow-hidden rounded-[1.5rem] ring-1 ring-[var(--line)]">
             <iframe
@@ -67,10 +71,10 @@ export default function ContactPage() {
         </div>
 
         <div>
-          <h2 className="display text-2xl font-semibold">Send an enquiry</h2>
-          <p className="mt-2 text-sm text-ink-soft">We will continue the conversation on WhatsApp.</p>
+          <h2 className="display text-2xl font-semibold text-navy">Send an enquiry</h2>
+          <p className="mt-2 text-sm text-ink-soft">We continue the conversation on WhatsApp.</p>
           <div className="mt-6">
-            <EnquiryForm />
+            <EnquiryForm courseName="FS1 to Year 12 academics" />
           </div>
         </div>
       </div>

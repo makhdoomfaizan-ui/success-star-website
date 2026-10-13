@@ -3,26 +3,26 @@ import type { Course } from "@/content/courses";
 
 export function CourseCard({ course }: { course: Course }) {
   return (
-    <article className="group flex h-full flex-col border-b border-[var(--line)] pb-8 pt-2 transition hover:border-gold/50">
-      <p className="text-xs font-semibold uppercase tracking-[0.16em] text-sea">
+    <article className="group flex h-full flex-col rounded-[1.5rem] bg-white p-6 shadow-[var(--shadow)] ring-1 ring-[var(--line)] transition hover:-translate-y-1 hover:ring-blue/30">
+      <p className="text-xs font-bold uppercase tracking-[0.16em] text-mint">
         {course.category}
       </p>
-      <h3 className="display mt-3 text-2xl font-semibold tracking-tight text-ink">
-        <Link href={`/courses/${course.slug}`} className="transition group-hover:text-gold-deep">
+      <h3 className="display mt-3 text-2xl font-semibold tracking-tight text-navy">
+        <Link href={`/courses/${course.slug}`} className="transition group-hover:text-blue">
           {course.shortTitle}
         </Link>
       </h3>
       <p className="mt-3 flex-1 text-sm leading-7 text-ink-soft">{course.summary}</p>
-      <div className="mt-5 flex flex-wrap gap-3 text-xs font-medium text-ink-soft">
+      <div className="mt-5 flex flex-wrap gap-3 text-xs font-semibold text-ink-soft">
         <span>{course.audience}</span>
         <span aria-hidden>•</span>
         <span>{course.mode}</span>
       </div>
       <Link
         href={`/courses/${course.slug}`}
-        className="mt-6 inline-flex text-sm font-semibold text-ink underline decoration-gold/70 underline-offset-4"
+        className="mt-6 inline-flex text-sm font-bold text-blue underline decoration-gold decoration-2 underline-offset-4"
       >
-        View course details
+        View details
       </Link>
     </article>
   );
