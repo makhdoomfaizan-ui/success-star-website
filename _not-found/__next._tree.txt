@@ -1,4 +1,4 @@
-:HL["/success-star-website/_next/static/chunks/1wpce83ea0fmv.css","style"]
+:HL["/success-star-website/_next/static/chunks/0de8vibk0qc1d.css","style"]
 2:[["children",{"s":"__PAGE__","h":160}]]
 1:[["children",{"s":"/_not-found","h":64,"c":"$Q2"}]]
-0:{"b":"qt1tQ9P-IWhztIfzEqJU_","t":{"t":{"s":"","h":16,"c":"$Q1"}}}
+0:{"b":"SMxSES2awK85n5QzU1ze_","t":{"t":{"s":"","h":16,"c":"$Q1"}}}
